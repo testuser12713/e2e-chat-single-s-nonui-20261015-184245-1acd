@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=75,<82", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textutils"
+version = "0.1.0"
+description = "Small standard-library string helper functions: slugify, truncate, word_count, is_palindrome, reverse_words."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=9.1,<10"]
+dev = ["pytest>=9.1,<10", "ruff>=0.17,<0.18"]
+
+[tool.setuptools]
+packages = ["textutils"]
